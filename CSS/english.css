@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+.header h1 {font-size:1.6em; font-weight:normal; background-color:#fff; color:#444; padding:20px; opacity:0.8; padding-left:30px; letter-spacing:10px;}
+
+.nav ul {  background-color:#45C998; color:#fff;}
+.nav li { list-style:none; float:left ; padding:0px 30px; height:36px; line-height:36px;}
+.nav li:hover { cursor:pointer ; background-color:#74B96E;}
+.nav .selected {background-color:#64D778;}
+.main_container{ background-image:url(../img/back051910.jpg);}
+.header { padding:50px 0px;}
+
+#recite_sentance { padding-bottom:240px;}
+#recite_sentance .content { min-height:680px; padding-top:30px; background-color:#fff; position:relative;}
+ #dic_title { margin: 0px 50px 30px; font-weight:normal ; color:#45C998;}
+#show_frame { height:198px;  background-color:#fff; margin:30px 50px;  position:relative; overflow:hidden; border:2px solid #eee; border-radius:10px;}
+#sentance {padding:20px; text-indent:40px; font-size:1.2em; line-height:36px; font-family:"Segoe UI","Segoe WP",Arial,Sans-Serif;}
+#cover { width:860px ; height:200px ; position:absolute; top:0px; text-align:center; line-height:200px;
+ background-color:#fff; color:#666; font-size:1.2em; cursor:pointer;}
+ #sentance_check{ width:820px; height:190px; position:absolute; top:0px; padding: 0px 20px 10px; background-color:#eee; color:#444; display:none;}
+ #sentance_check span { display:inline-block; padding: 5px 5px; margin:2px 5px; }
+ #sentance_check .wrong { background-color:red; color:#fff;}
+ #sentance_check .miss { background-color:yellow; color:#000;}
+ #sentance_check h2 { font-weight:normal; font-size:1.2em; margin-left:10px; color:#1C3AB5; margin-top:10px; }
+#sentance_dictation { margin:40px 50px 10px; padding:20px 0px; }
+#sentance_dictation .manual { text-align:right;}
+#sentance_dictation button { width:60px; height:30px; background-color:#45C998; color:#fff; border:none;
+margin-right:30px; border-radius:10px; cursor:pointer;}
+#sentance_dictation textarea{ width:820px; height:150px; border:2px solid #999; border-radius:10px; margin-top:20px; padding:20px;
+font-size:1.2em; line-height:30px; }
+
+#operate_board { position:absolute; width:960px; height: 677px; overflow:hidden;  background-color:#fff; bottom:33px;  }
+#operate_board .main_menu , #operate_board .content_box  {
+	    height:677px; width:299px; overflow:hidden; border-right:1px solid #ddd; float:left; }
+#operate_board .main_menu { width:189px;  background-color:#F4F4F4; position:relative; }
+#operate_board  .main_menu h3 {line-height:40px; font-weight:normal; margin-top:30px; margin-left:10px; color:#666; font-size:1.2em;}
+#operate_board  .main_menu h3 span  { float:right; font-size:1.4em; margin-right:30px; cursor:pointer; }
+#operate_board  .main_menu li { padding-left:30px; list-style:none; line-height:32px; font-weight:0.8em; color:#666; cursor:pointer; 
+                                position:relative; }
+#operate_board  .main_menu .tag { position:absolute; width:3px; height:32px; left:0px; top:0px; background-color:#EC4926 ; display:none;}							
+#operate_board  .main_menu .selected { background-color:#eee; }
+#operate_board  .main_menu .selected .tag { display:block ;}
+#operate_board  .main_menu li input { width: 100px; height:22px; line-height:22px; border:1px #ccc solid ; font-size:0.8em; color:#444; }
+                 #now_info { height:70px; width:189px; border-top:1px solid #EF935A; ; position:absolute;
+				  bottom:25px;  cursor:pointer; text-align:center; color:#666;}
+				  #now_info h4 { height:24px; line-height:24px; font-weight:normal;color:#EF935A;}
+				  #flow { width:378px; height:46px; position:absolute;  }
+				  #flow .play_now_title { width:189px; height:46px; line-height:46px; font-size:0.9em;
+				   text-align:center; color:#EF935A; float:left;  }
+				  
+#operate_board .content_box { width:769px; color:#666; background-color:#FAFAFA; position:relative; }
+#operate_board .content_box  .scroll_box { position:absolute; top:0px; }
+#operate_board .content_box table { width:759px; border-collapse:collapse; border-top:1px #45C998 solid ;  }
+#operate_board .content_box tr:nth-child(2n+1) { background-color:#F5F5F5;}
+#operate_board .content_box tr:nth-child(2n) { background-color:#FAFAFA;}
+#operate_board .content_box tr:hover { background-color:#eee;}
+#operate_board .content_box td { padding:5px 30px;  }
+#operate_board .content_box th { padding:5px 30px; border: 1px solid #e7e7e7; text-align:left; font-weight:normal; 
+                                 border-top:1px #45C998 solid ;  }
+#operate_board .content_box table a { text-decoration:none ; color:#666;}
+     #empty_content { text-align:center ; padding-top:30px; display:none; }
+     #classical_textbooks { display:none; }
+	 #classical_textbooks .pic_frame { float:left ; margin:30px;}
+	 #classical_textbooks .item { padding:30px 30px 0px;}
+	 #classical_textbooks img { max-height:140px;}
+	 #classical_textbooks h2 { font-size:1.2em; margin:80px 220px 10px; padding-left:50px; padding:5px 0px; color:#45C998;  font-size:1.5em;}
+	 #user_list {display:none;}
+	 #user_list .list_head { padding: 30px 50px 0px ;}
+	 #user_list h2 { margin-bottom:30px; font-size:1.6em; font-weight:400; color:#45C998; padding-left:20px; }
+	 #user_list .portrait_frame { width:60px; height:60px; overflow:hidden ; float:left; position:relative ; margin-right:10px;
+	                             margin-left:30px;}
+     #user_list .portrait_frame  img { position:absolute ; top:-79px; left:-94px; }
+	 #user_list .list_info { line-height:60px; }
+	 #user_list .list_info span { margin:0px 10px; }
+	 #user_list .list_info .create_date { font-size:0.8em ; color: #999;}
+	 #user_list .buttons { margin: 30px 30px ; }
+	 #user_list .buttons a { text-decoration:none; display:inline-block ; padding: 0px 10px; height:26px ; line-height:26px;
+	                        text-align:center; color:#444; background-color:#FFF; border:1px #ddd solid ; border-radius:5px;
+							 margin:0px 20px; margin-left:0px; font-size:0.8em;}
+	 #user_list .buttons { clear:both ;}
+	 
+
+
+
+#player_face { position:absolute; width:37px; height: 25px; overflow:hidden;  background-color:#fff;
+                bottom:33px; left:0px; display:none;   }
+      #hide_face { position:absolute ; right:20px; top:20px; cursor:pointer; }
+#player_face h2 { margin:50px ; font-weight:normal; text-align:center; color:#444; font-size:1.4em;}
+#player_face .subtitle { width:800px; height:450px; overflow:hidden;  margin: 0px auto ; position:relative;}
+#player_face .subtitle ul { position:absolute; left:0px; bottom:0px;}
+#player_face li { height:109px; width:740px; overflow:hidden; list-style:none; border-bottom:1px solid #ddd; padding: 20px 30px;
+                 text-indent:2em; font-size:1.3em; font-weight:400; line-height:1.5em; font-family:"Segoe UI","Segoe WP",Arial,Sans-Serif; }
+#player_face ul .now { color:#06A465; }
+
+
+
+
+#recite_sentance   .control {  text-align:center;  padding:10px 0px; border-bottom:1px solid #ccc; border-top:1px solid #ddd;
+text-align:center; width:960px; position:absolute; bottom:0px; background-color:#eee;}
+#recite_sentance .control   img { height:32px; cursor:pointer; margin:0px 30px;}
+                             
+#recite_sentance  .control span{ display:inline-block; height:32px; line-height:32px; position:absolute; bottom:0px; left:70px;  color:#888; font-size:1.6em;}
+#recite_sentance .float_left { position:absolute; margin-left:30px; left:0px; bottom:10px; height:32px; line-height:32px; }
+#recite_sentance .float_right { position:absolute; margin-right:30px; right:0px; bottom:10px;}
+   #shuffle , #loop { display:none;}
+
+
+#query { display:none; padding-bottom:240px; font-family:"Segoe UI","Segoe WP",Arial,Sans-Serif;}
+#query .content { min-height:600px; padding-top:30px; background-color:#fff; padding-bottom:80px; }
+   #query_area { width:360px;   margin: 30px 300px; margin-top:50px; position:relative;}
+   #query_area div { float:left; }
+   #query_area .input { width:298px; height:34px;  line-height:34px;  border:1px solid #74B96E;}
+   #query_area input { width:288px; height:32px; line-height:32px; padding-left:10px; border:none; font-size:1em; margin-bottom:1px;  }
+   #query_area .search_button { width:58px; height:34px; line-height:34px; border:1px solid #74B96E; text-align:center;
+    background-color:#74B96E; color:#fff; cursor:pointer;}
+   #query_area ul { list-style:none ; width: 298px ; border:1px solid #ccc; position:absolute; top:34px; background-color:#F8F8F8;
+                    display:none; }
+   #query_area ul li { height:36px; line-height:36px;  padding-left:10px; font-weight:normal; clear:both;
+                      color:#7374A2;}
+	#query_area ul li:hover { background-color:#eee;}
+   
+   
+	
+#query_result { clear:both; margin-top:20px;}
+#query .result_number { margin:30px 50px; }
+#query .result_list { margin: 30px 50px ; list-style:none;  }
+#query_result li { margin:30px 0px;  line-height:28px; clear:both;}
+#query_result li .query_content { margin:0px; padding:0px; color:red; font-weight:bold; }
+#query .sound {  width:32px;   line-height:28px; float:left;  }
+#query .sound img { height:28px; cursor:pointer;}
+#query .text {  margin-left:40px; position:static; }
+
+
+
+#select_sentances { width:800px;  background-color:#eee; margin-left:80px; position:absolute; top:300px; display:none; padding-bottom:30px; }
+#select_sentances ul { margin:30px 25px;}
+#select_sentances li { list-style:none; width:220px; height:30px; margin:5px; padding-left:10px; line-height:30px; overflow:hidden; float:left; font-size:1em; cursor:pointer;}
+#select_sentances .checkbox { width:14px; height:14px; margin-right:5px; display:none; }
+#select_sentances .control { text-align:center;}
+#select_sentances  button {width:100px; height:30px;   border:none; background-color:#74B96E; color:#fff;                                 font-size:1em; margin:30px 0px 10px;cursor:pointer;}

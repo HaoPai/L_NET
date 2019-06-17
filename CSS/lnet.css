@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin:0px; padding:0px;}
+
+body {font-family:"Arial","Hiragino Sans GB",微软雅黑,"Helvetica","sans-serif" ;	font-size:16px;    }
+.content { width:960px; margin:0px auto;}
+.clearfix {	zoom:1;}
+.clearfix:after { content:"."; display:block; visibility:hidden; height:0; clear:both;}
+textarea { resize:none ; outline:none;}
+input { outline:none;}
+img { border:none;}
+h1,h2,h3 { font-weight:normal ; }
+.top_nav {	background-color:#666;	color:#fff;}	
+.top_nav ul  li {	display:inline-block;}
+.top_nav span {	margin-right:30px;}
+.top_nav ul a , .top_nav span a {	display:inline-block; padding:5px 15px; text-decoration:none; color:#fff ;}
+.top_nav ul a:hover {	background-color:#999;}
+.top_nav .login_info {	float:right;}
+.top_nav .login_info a {cursor:pointer;}
+.top_nav ul {	float:left;	margin-left:50px;}
+
+
+
+.button { list-style:none; float:left; margin-right:50px; width:100px ; height:32px; overflow:hidden;
+             line-height:32px; text-align:center; font-size:1em ;background-color:#74B96E; color:#fff; cursor:pointer;}
+
+.form_table { margin: 30px 50px;}
+          .form_control { height:40px; background-color:#74B96E; color:#fff; border-bottom:1px solid #ccc;}
+          .form_title{ line-height:40px; margin-left:20px; }
+		  .form_table td {   height:40px; }
+		  .form_table select ,.form_table .text ,.form_table textarea{ border:1px solid #ccc ; width:300px; 
+														   height:36px; line-height:36px; padding-left:30px;
+														   background-color:#fff;
+														   font-family:"Arial","Hiragino Sans GB",微软雅黑,"Helvetica","sans-serif" ;
+														   font-size:14px;}
+		  .form_table .file { width:200px; height:30px ;  } 
+		  .form_name { font-size:0.8em;}
+		  .form_table select { width:200px;}
+		  .form_table textarea { height:120px;}
+		  .form_submit input { width:100px; height:30px;   border:none; background-color:#74B96E; color:#fff;                                 font-size:1em; margin:30px 0px 10px;;
+							    cursor:pointer;}
+	      .form_quit { position:absolute; width:40px ; height:40px ; top:0px; right:0px; text-align:center; line-height:40px; color:#fff;
+	              font-size:1.2em; cursor:pointer;}                   
+
+#log_in { background-color:#fff;    display:none; margin-left:200px;   position:absolute; top:400px; }
+#log_in .control_bar { height:40px; cursor:move; }
+#log_in h2 {  font-size:1.4em; color:#666; margin-bottom:20px;}
+
+#log_in .log_info { width:400px; padding:10px 50px 30px;}
+#log_in input { width:400px; height:40px; line-height:40px; margin:10px 0px;}
+#log_in .text { border:1px solid #ccc; background:url(../img/ico-ggjkjgjg.png) no-repeat 5px 0px; padding-left:30px;
+                width:368px; font-size:1.0em;}
+#log_in .pwd { background-position:5px -36px;}
+
+#log_in .submit { border:none ; background-color:#74B96E; color:#fff; cursor:pointer ; font-size:1.2em;}
+
+#log_in p a { color:#999; font-size:0.8em }
+#log_in p .reg { float:right; margin-right:30px; color:#74B96E; cursor:pointer;}
+    #quit_login { position:absolute; width:40px ; height:40px ; top:0px; right:0px; text-align:center; line-height:40px;
+	              font-size:1.2em; cursor:pointer;}
+#log_in .error { color:red;  }
+
+#footer { font-size:0.8em; background-color:#eee;  color:#999; text-align:center ; padding:20px 0px; }
+#footer h1 { font-weight:normal; margin:10px; font-size:1em; color:#444;}
+#gray_layer , #shadow_layer {width:100%;height:150%;background-color:#666;opacity:0.9;position:absolute;top:0;z-index:1;display:none;} 
+#shadow_layer { height:1200px; left:0px; top: 0px;}
+	

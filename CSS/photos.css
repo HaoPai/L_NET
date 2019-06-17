@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+.content {
+	width:960px; margin: 0px auto;  }
+body {}
+
+#head { background-color:#fff; padding:30px 0px; border-bottom:1px solid #ccc; }
+#head .content { text-align:center ;}
+#head .left { display:inline-block ; float:left ;}
+       #page_logo { font-size:1.6em ; width:100px; padding-left:40px; height:35px;
+	          background:url(../img/ico/instagram_32px_1202559_easyicon.net.png) no-repeat left;
+			  font-family:Arial, Helvetica, sans-serif; color:#444 ; text-decoration:none; }
+#head .middle { display:inline-block ; }
+       #photo_search { width:250px; height:30px; line-height:30px; font-size:1em; border:1px solid #ccc ;
+	                   border-radius:3px; padding-left:10px;}
+#head .right { display:inline-block ; float:right ;}
+#head .right a { margin:0px 15px; cursor:pointer; }
+       #users { display:inline-block; overflow:hidden; height:24px; width:24px; 
+	            background-image:url(../img/ico/ins.png); background-position:-139px -289px;}
+	   #like  { display:inline-block; overflow:hidden; height:24px; width:24px; 
+	            background-image:url(../img/ico/ins.png); background-position:-79px -338px;} 
+	   #myself { display:inline-block; overflow:hidden; height:24px; width:24px; 
+	            background-image:url(../img/ico/ins.png); background-position:-27px -338px;} 
+   
+
+	
+	
+
+#popular_albums { padding:30px 0px 0px; background-color:#f9f9f9;}
+#popular_albums .content {  border-bottom:1px solid #ddd;}
+#popular_albums h2 ,#show_albums h2  { font-weight:normal ; font-size:1.4em; color:#444; margin:20px 0px; }
+.albums {  padding-bottom:20px;}
+.albums .album { width:200px ; height:200px; position:relative; background-color:#eee; float:left;
+                 margin:20px; margin-left:0px; margin-top:0px; padding:8px ; background-color:#fff; border:1px solid #ddd; }
+.albums .album:hover { border:1px solid #A6D0D9;}
+.albums .album_frame { width:200px; height:200px; overflow:hidden ; position:relative; }
+.album img { width:200px;  position: absolute;}
+
+.albums .album .album_name {position:absolute; width:200px; height:25px; overflow:hidden; background-color:#999;
+                           left:8px; bottom:8px;     text-align:center; line-height:25px; opacity:0.8; color:#fff;}
+
+
+#show_albums {  background-color:#f9f9f9; border-bottom:1px solid #ccc;}
+#show_albums .content {  padding:30px; padding-top:10px;}
+
+
+#footer { background-color:#f9f9f9; color:#999; text-align:center ; padding:30px 0px; }
+#footer h1 { font-weight:normal; margin:15px; font-size:1.2em; color:#666;}
+	
+
+
+	
+	                          
+

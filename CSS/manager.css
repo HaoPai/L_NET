@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+#header {height:200px; background:url(../img/welcome.png) no-repeat center; background-size: contain; background-color:#eee; }
+#page_nav { border-bottom: 2px solid #ccc; background-color:#eee;}
+#page_nav .content { height:80px; position:relative; }
+#page_nav .middle_line { margin:0px 20px; height:38px; border-bottom:2px solid #333;}
+#page_nav ul { padding:0px 0px;   background-color:#eee; position:absolute; top:20px; left:320px; }
+#page_nav li { list-style:none ; float:left ; width:160px ; text-align:center ; line-height:40px; height:40px;
+                font-size:1.2em; cursor:pointer;  }
+				
+#page_intro , #resume , #manager_messages  { padding:30px 0px; background-color:#eee; display:none;}
+#page_intro { display:block;}
+#page_intro .content {  }
+#page_intro .side_bar { padding:10px;   border:1px solid #ccc ; float:left; position:fixed;
+                        background-color:#fff; border-radius:20px; }
+#page_intro  .side_bar li { width:130px; padding-left:10px; line-height:60px; border-bottom:1px solid #ccc; font-size:1em; font-weight:bold; color:#666; }
+#page_intro .side_bar a {font-weight:bold; color:#666; text-decoration:none; }
+#page_intro .intro_main { margin-left:200px; padding:40px; 
+                        background-color:#fff; color:#222; }
+#page_intro h2 {  font-size:1.4em; text-align:center;  color:#666;}
+#page_intro h3 {  font-size:1.1em; margin-top:1em; color:#666; }
+#page_intro p { line-height:2em ; text-indent:2em; margin-top:1em; }
+#page_intro ul { list-style:none;}
+#page_intro .intro_main li { line-height:2em; text-indent:2em; }
+#page_intro .intro_main a { font-weight:bold; color:#666;}
+#resume .content { height:1000px; background-color:#fff;}
+
+
+#manager_messages .content { min-height:1000px; background-color:#fff; padding:30px; width:900px;}
+#manager_messages h2 { color:#444; font-weight:normal; font-size:1.4em ; border-bottom:1px solid #ccc; padding:10px 0px; margin:0px 0px 30px;}
+#manager_messages p { font-size:1em ;  margin:30px 0px 10px; color:#666; }
+   #input_message { height:180px; width:800px; border:1px solid #ccc; }
+   #input_message .tool_bar { height:39px; background-color: #eee; border-bottom:1px solid #ddd;}
+   #input_message textarea { height:120px; width:778px; margin:10px 10px; border:none; font-size:1em;
+   font-family:"Arial","Hiragino Sans GB",微软雅黑,"Helvetica","sans-serif" ;  }
+ #manager_messages .button { height:32px; border:none ; margin:30px 0px; background-color:#AAD8A7; border-radius:10px; color:#fff; width:90px; }
+ #manager_messages h3 { font-weight:normal ; font-size:1.2em ; padding:10px; border-bottom:1px solid #ccc;}
+ 
+
+#message_list .portrait_frmae img { position:absolute;}
+#message_list li .portrait_frame { width:60px ; height:60px; margin:30px 30px 30px 10px; overflow:hidden ; 
+                                  position:relative ;  float:left ; border-radius:30px; }
+#message_list li {  font-size:0.9em; list-style:none;  border-bottom:1px solid #aaa; border-bottom:1px solid #ccc; }
+#message_list li  .message_main { margin-left:100px; padding:20px 0px ;   }
+#message_list li   .delete_message { float:right; font-size:0.6em; color:#999; margin-right:20px; cursor:pointer; }
+#message_list li  .message_head { height:20px ; line-height: 20px; font-size:1.2em ; color:#5C859A; }
+#message_list li  .message_content { min-height:40px; margin-top:20px; color:#444; font-size:1em; }
+#message_list li  .message_time { height:10px; color:#666;}
+
+
+
+

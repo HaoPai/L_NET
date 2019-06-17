@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+#register {  margin-left:70px; position:absolute; z-index:110; top:130px; background-color:#fff; padding:50px 50px 30px; border-radius:5px; width:673px; height:564px;}
+#register .register_info{  padding:10px 50px; }
+#register table {  margin:50px auto; }
+#register .input_name { text-align:right; padding-right:5px; width:100px;}
+#register  .hint { width:150px; overflow:hidden;  font-size:0.8em; color:#666; padding-left:10px;}
+#register h2 {  font-size:1.4em; color:#666; margin-bottom:20px;}
+#register i { color:red; margin-right:5px;}
+#register input { width:160px; height:40px; line-height:40px; margin:10px 0px; font-weight:600;}
+#register .text { border:1px solid #ccc;  padding-left:10px;
+                width:286px; font-size:1.0em;}
+#register .pwd { }
+#register  .slide_frame { width:298px ; height:34px; margin:13px 0px; border:1px solid #ccc; border-radius:18px; background-color:#eee; position:relative; line-height:34px;
+text-align:center; font-size:0.8em; color:#999;}
+#register  .slide_button { width:60px; height:30px; border:1px solid #ccc; border-radius:16px; margin:1px 0px; text-align:center; line-height:30px; letter-spacing:3px; position:absolute; left:1px; cursor:pointer; background-color:#fff; color:#000; font-weight:bold;}
+
+#register .submit { margin-top:20px; border:none ; background-color:#74B96E; color:#fff; cursor:pointer ; font-size:1.2em; border-radius:15px;}
+
+#register .sucess { width:673px ; height:214px; padding:150px 0px; text-align:center; display:none; }
+#register .sucess h2 { font-weight:normal ; color:#444; }
+#register .sucess p { margin-top:100px; }
+#register .sucess a { display:block;  width:140px ; height:32px; margin:0px auto; overflow:hidden;
+             line-height:32px; text-align:center; font-size:1em ;background-color:#74B96E; color:#fff; cursor:pointer; }
