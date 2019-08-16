@@ -208,6 +208,9 @@
 				case 'english_resources':
 				       $query = "select * from english_resource order by resource_name";
 				break;
+				case 'unexplained':
+					  $query = "select word_content from english_words_lib where explanation_tag = '0' and reference_count > 0  order by word_frequency  ";
+				break;
 				case 'get_photo':
 				      if(isset($_GET['photo_ids']))
 					  {

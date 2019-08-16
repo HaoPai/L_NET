@@ -320,10 +320,10 @@
  		if($search_item_id == 0 ){
 
  			$this_id = $search_id;
-			$query = "select word_content,audio_path from english_words_lib where word_id = '$this_id'";
+			$query = "select word_content,audio_path,explanation_tag from english_words_lib where word_id = '$this_id'";
 			$result = mysql_query($query,$dbc);
 			$row = mysql_fetch_array($result);
-			print_search_word($this_id,$row['word_content'],$row['audio_path']);
+			print_search_word($this_id,$row['word_content'],$row['audio_path'],$row['explanation_tag']);
 
  			for($i = 1; $i < count($ids);$i ++){
 			$this_id = $ids[$i][0];
@@ -668,7 +668,7 @@
 <?php
 	  }
 	  
-	  function print_search_word($word_id,$word_content,$audio_path)
+	  function print_search_word($word_id,$word_content,$audio_path,$explanation_tag)
 	  {
 ?>
 			<div class="search_word">
@@ -681,7 +681,16 @@
                      <td>
                      <p class="sentance"><?php echo $word_content; ?> </p>
                     </td>
-                    
+					<?php
+						if($explanation_tag == 0){
+
+					?>
+					<td>
+						<a target = "_blank" href="https://fanyi.sogou.com/#auto/zh-CHS/<?php echo $word_content;?>">查词</a>
+					</td>
+                    <?php
+						}
+					?>
                    </tr>
                 </table>
              </div>

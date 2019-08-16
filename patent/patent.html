@@ -1,0 +1,173 @@
+<html>
+
+<head>
+    <title>专利操作</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="patent.css">
+</head>
+
+<body>
+    <div id="log_in">
+        <p>请先
+            <a href="../log_in.php">登录</a> ☺</p>
+    </div>
+    <div id="busy">
+        <p>系统处理中，请等待☺</p>
+    </div>
+    <div id="nav">
+        <div id="user">请登录</div>
+        <ul>
+            <li>
+                <a id="all_link" class="main_link">所有专利</a>
+            </li>
+            <li>
+                <a id="green_link" class="main_link">绿色专利</a>
+            </li>
+            <li>
+                <a id="show_link" class="main_link">显示专利</a>
+            </li>
+            <li>
+                <a id="keywords_link" class="main_link">关键词</a>
+            </li>
+        </ul>
+    </div>
+    <div id="main">
+
+        <div id="all_patents" class="main_section">
+            <h2>所有专利</h2>
+            <table id="all_patents_table">
+                <thead>
+                    <tr>
+                        <th>专利名称</th>
+                        <th>申请公司</th>
+                        <th>行业</th>
+                        <th>词数</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="page_number">
+                <span class="prev">prev</span>
+                <!-- <div class="search"><input type="text"><button>GO</button></div> -->
+                <span class="next">next</span>(<span class="page" style="margin: 0px;">1</span>/6638)
+            </div>
+        </div>
+        <div id="green_patents" class="main_section">
+            <h2>绿色专利</h2>
+            <table id="green_patents_table">
+                <thead>
+                    <tr>
+                        <th>专利名称</th>
+                        <th>申请公司</th>
+                        <th>关键词数</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="page_number">
+                <span class="prev">prev</span>
+                <!-- <div class="search"><input type="text"><button>GO</button></div> -->
+                <span class="next">next</span>(<span class="page" style="margin: 0px;">1</span>/6638)
+            </div>
+        </div>
+        <div id="show_patent" class="main_section">
+            <table id="show_frame">
+                <tbody>
+                    <tr>
+                        <td id="patent_td">
+                            <div id="patent">
+                                <div class="section_header">专利</div>
+                                <div id="edit_patent">
+                                    <div id="normal">
+                                        <button id="submit_patent">确定并提交</button>
+                                        <ul>
+                                            <li id="select" class="select_button"> 请选择</li>
+                                            <li id="green" class="select_button">绿色</li>
+                                            <li id="red" class="select_button">非绿色</li>
+                                        </ul>
+                                    </div>
+                                    <div id="locked">
+                                        <button class="next_button">Next</button>
+                                        <p>该专利已经被用户<span id="lock_user"></span>锁定！</p>
+                                    </div>
+
+                                    <div id="checked">
+                                        <button class="next_button">Next</button>
+                                        <p>结论：被用户<span id="check_user"></span>判定为<span id="check_result"></span>专利！</p>
+                                        <p>时间：<span id="check_time"></span></p>
+                                    </div>
+
+                                </div>
+
+                                <table id="patent_table">
+                                    <thead></thead>
+                                    <tbody>
+                                        <tr>
+                                            <td id="col_1">股票代码：</td>
+                                            <td>
+                                                <div id="stock_code"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>申请公司：</td>
+                                            <td>
+                                                <div id="ap_company"></div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>所属行业：</td>
+                                            <td>
+                                                <div id="sector_name"></div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>专利标题：</td>
+                                            <td>
+                                                <div id="patent_title"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>摘要：</td>
+                                            <td>
+                                                <div id="patent_abstract"></div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div id="word_list">
+                                <div class="section_header">关键词</div>
+                                <div id="found_words"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="keywords" class="main_section">
+            <div id="add_keyword_div">
+                <input type="text" id="keyword">
+                <button id="add_keyword">添加关键词</button>
+            </div>
+            <table id="words_table">
+                <thead>
+                    <tr>
+                        <th>关键词</th>
+                        <th>出现次数</th>
+                        <th>删除</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="patent.js"></script>
+</body>
+
+</html>
